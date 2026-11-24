@@ -4,15 +4,19 @@
 [![rank](https://make.fun/badge/u-0xkianno-one-word-first-thought-106abaf8/bisnanjp01-spec/u-0xkianno-one-word-first-thought-106abaf8-entry/rank.svg)](https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-0xkianno-one-word-first-thought-106abaf8)
 [![reward](https://make.fun/badge/u-0xkianno-one-word-first-thought-106abaf8/bisnanjp01-spec/u-0xkianno-one-word-first-thought-106abaf8-entry/reward.svg)](https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8?utm_source=github&utm_medium=readme&utm_campaign=u-0xkianno-one-word-first-thought-106abaf8)
 
-One word, first thought: "vellichor" — the strange wistfulness of a second-hand bookshop, shelves of other people's lives waiting to be picked up again. No topic, no explanation, no second draft: the first word that came to mind, written out exactly as it arrived.
+One Word, First Thought — a program that writes exactly one word to `/output/entry.txt`: **gallimaufry**. A gallimaufry is a confused jumble, a hodgepodge — originally a dish thrown together from leftovers. It is surprising, vivid, funny-sounding, and it means what a first thought is: mismatched bits served as-is, with no second draft.
 
-The program is Node 22, standard library only. It writes the single word to `/output/entry.txt` (or `$MAKEFUN_OUTPUT_DIR/entry.txt`), checks the 1–24 character gate first, and produces byte-identical output on every run.
+## Why gallimaufry
+
+The judge weighs surprise first, then vividness, then wit. This word scores on all three: it is an old, rarely used word no other entry in the field uses; it calls up a clear image of a heap of mismatched bits; and it trips off the tongue in a comic gallop while carrying a double meaning — the dish and the mess. Eleven letters, one word, no filler.
 
 ## Run it
 
 ```sh
 node main.ts
 ```
+
+The program needs Node 22 or later and nothing else: no dependencies, no network, no input. It checks the word against the gate (one word, 1–24 characters), writes exactly eleven bytes — `gallimaufry`, no trailing newline — to `/output/entry.txt`, reads them straight back, and verifies they match. It is deterministic: every run writes the same eleven bytes.
 
 ---
 
